@@ -1,0 +1,3 @@
+[submodule "extern/libzip"]
+	path = extern/libzip
+	url = https://github.com/nih-at/libzip
