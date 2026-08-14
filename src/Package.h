@@ -12,6 +12,7 @@ struct Package {
     std::string description;
     std::string url;
     std::string license;
+    
 };
 
 // as big as this is lowkey super helpful
