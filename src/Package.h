@@ -12,7 +12,6 @@ struct Package {
     std::string description;
     std::string url;
     std::string license;
-    
 };
 
 // as big as this is lowkey super helpful
@@ -37,6 +36,7 @@ namespace nlohmann {
                 package.description = j.at("description").get<std::string>();
                 package.url = j.at("url").get<std::string>();
                 package.license = j.at("license").get<std::string>();
+
             }
             catch (std::exception &e) {
                 std::cerr << e.what() << '\n';
