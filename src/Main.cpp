@@ -71,7 +71,7 @@ int main(int argc, char* argv[]) {
     std::string os = getOperatingSystem();
 
     if (argc < 2) {
-        std::cout << "Usage: installer <zip archive>" << std::endl;
+        std::cout << "Usage: installer <zip archive>" << os << std::endl;
         return 1;
     }
 
@@ -89,7 +89,6 @@ int main(int argc, char* argv[]) {
     std::cout << GREEN << "  License: "<< WHITE << p.license << std::endl;
 
     std::cout << WHITE << "Install? [Y/n]: ";
-
 
 
     return 0;

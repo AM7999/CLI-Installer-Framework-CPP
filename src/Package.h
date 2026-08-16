@@ -6,13 +6,13 @@
 #include <nlohmann/json.hpp>
 
 enum class Architecture {
-    X86,
-    X86_64,
-    AARCH64,
-    ARMHF,
-    LOONGAARCH64,
-    RISCV
-}
+    x86,
+    x86_64,
+    aarch64,
+    armhf,
+    loongaarch64,
+    riscv
+};
 
 struct Package {
     std::string name;
