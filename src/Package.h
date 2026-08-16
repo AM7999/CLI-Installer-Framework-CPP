@@ -5,6 +5,15 @@
 #include <string>
 #include <nlohmann/json.hpp>
 
+enum class Architecture {
+    X86,
+    X86_64,
+    AARCH64,
+    ARMHF,
+    LOONGAARCH64,
+    RISCV
+}
+
 struct Package {
     std::string name;
     std::string version;

@@ -79,7 +79,6 @@ int main(int argc, char* argv[]) {
 
     std::string manifest_str = loadManifest(argv[1]);
     nlohmann::json manifest = nlohmann::json::parse(manifest_str);
-
     auto p = manifest.get<Package>();
 
     std::cout << "Are you sure you want to install: " << p.name << '\n';
@@ -90,6 +89,8 @@ int main(int argc, char* argv[]) {
     std::cout << GREEN << "  License: "<< WHITE << p.license << std::endl;
 
     std::cout << WHITE << "Install? [Y/n]: ";
+
+
 
     return 0;
 }
